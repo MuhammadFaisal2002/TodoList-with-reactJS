@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin : 0 ;
+  font-family: "popins",sans-serif;
+  
+}
+/* body {
+  background-image: url('/assets/image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+html, body {
+  height: 100%; /* Ensure full height for body and html */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+body {
+  background-image: url('/assets/image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure at least full viewport height */
+}
+.Todowrapper {
+  color:#1E3A8A;
+  background-color: rgb(175, 128, 175); 
+  padding: 2rem;
+  margin-top: 0.5em;
+  max-width: 30em;
+  max-height: 20em;
+  border-radius: 5px;
+  box-shadow :   2px;
+  overflow-y: auto;
+  overflow-y: auto;        /* Add vertical scrollbar */
+  overflow-x: hidden;  
+}
+.Todo-input{
+  width: 18rem;
+  height: 1.7rem;
+  border-radius: 7px 0 0 0;
+  border-color: inherit;
+  font-size: 15px;
+  font-weight: 800;
+  border-color: rgb(175, 128, 175); 
+}
+.Todo-form{
+  padding-top: 1rem;
+}
+.Todo-btn{
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0 0 7px 0;
+  border-color: #1E3A8A;
+  background-color: #1E3A8A;
+  font-size: 15px;
+  color: rgb(175, 128, 175); 
+  cursor: pointer;
+}
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1E3A8A;
+  border-radius: 5px;
+  color: rgb(175, 128, 175);  
+  margin: 1.5em 0;
+  height: 2rem;
+  align-items: center;
+  font-size: 20px;
+  padding: 0.2em;
+}
+.edit-icon{
+  padding: 0.2em 0.7em;
+  cursor: pointer; 
+}
+.delete-icon{
+  padding: 0.2em 0.1em;
+  cursor: pointer;
+}
+/* App.css */
+.completed {
+  text-decoration: line-through;
+  color: yellow;
+}
+
+.not-completed {
+  text-decoration: none;
+}
+
+.delete-icon, .edit-icon {
+  cursor: pointer;
+  margin-left: 10px;
+}
